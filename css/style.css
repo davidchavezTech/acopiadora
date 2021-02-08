@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+.page1 {
+  background-color: #aefab3;
+}
+
+.logo {
+  width: 250px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
