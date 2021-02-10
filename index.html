@@ -8,31 +8,36 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="inicio"></div>
     <div class="nav">
         <div class="nav-wrapper">
             <img src="img/logo.svg" class="logo">
             <div class="nav-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#teBrindamos">Te Brindamos</a>
-                <a href="#nosotros">Nosotros</a>
-                <div class="capsule" style="margin-left:40px;">
-                    <a href="#contactanos" class="remove-padding">Contáctanos</a>
-                </div>
+                <a href="#inicio" id="nav-inicio">Inicio</a>
+                <a href="#teBrindamos" id="nav-te-brindamos">Te Brindamos</a>
+                <a href="#nosotros" id="nav-nosotros">Nosotros</a>
+                <a href="#contactanos" class="remove-padding">
+                <div class="capsule" style="margin-left:40px;" id="nav-contactanos">Contáctanos</div>
+                </a>
             </div>
         </div>
     </div>
+    <img src="img/flag-peru-on.svg" class="flag-peru">
+    <img src="img/flag-us-off.svg" class="flag-us">
     <div class="page1">
-        <h1>Sabor único, exquisito y fresco</h2>
+        <h1 id="titulo-page1">Sabor único, exquisito y fresco</h2>
         <p class="subtitle1">Productos cultivados naturalmente</p>
         <img src="img/palta1.jpg" class="palta1">
     </div>
+    
     <div class="spacer"></div>
+    <div id="teBrindamos"></div>
     <div class="page2">
         <div class="rellax" data-rellax-speed="-10">
             <p class="title2">Te brindamos</p>
             <div class="tipos-container">
-                <span>Palta Fuerte</span>
-                <span>Palta Hass</span>
+                <span id="palta-fuerte">Palta Fuerte</span>
+                <span id="palta-hass">Palta Hass</span>
             </div>
             <img src="img/palta-left.png" class="palta-left rellax" data-rellax-speed="10">
             <img src="img/palta-right.png" class="palta-right rellax" data-rellax-speed="10">
@@ -41,60 +46,61 @@
             <div class="calendar-text-wrapper">
                 <div class="palta-types">
                     <div class="type1">
-                        <span>Palta Fuerte</span>
+                        <span id="palta-one-title">Palta Fuerte</span>
                         <img src="img/checkmark-green.png">
                     </div>
                     <div class="type2">
-                        <span>Palta Hass</span>
+                        <span id="palta-two-title">Palta Hass</span>
                         <img src="img/checkmark-red.png">
                     </div>
                 </div>
                 <div class="info">
-                    Trabajamos desde julio del 2019 de la mano con comunidades de las zonas de: Lambayeque, anchash, lima, Ica, Arequipa, Ayacucho, huancayo, Huancavelica y Cajamarca.
+                    Trabajamos desde julio del 2019 de la mano con comunidades de las zonas de: Lambayeque, Anchash, Lima, Ica, Arequipa, Ayacucho, Huancayo, Huancavelica y Cajamarca.
                 </div>
             </div>
-            <img src="img/notepad.png">
+            <img src="img/notepad.png" id="notepad">
         </div>
         <img src="img/paltas-bg.png" class="go-back rellax" data-rellax-speed="-10">
-        <p class="nosotros-title">Nosotros</p>
+        <p class="nosotros-title" id="nosotros">Nosotros</p>
         <img src="img/template.jpeg" class="img-template">
     </div>
     <div class="page-3">
         <img src="img/last-palta-left.png"class="last-left">
         <img src="img/last-palta-right.png"class="last-right">
         <div class="contacto-title">
-            <p class="contactate-1">Contáctate</p>
+            <p class="contactate-1" id="contactanos">Contáctate</p>
             <p class="contactate-2">con</p>
             <p class="contactate-3">nosotros</p>
         </div>
+        <form id="my-form" action="https://formspree.io/f/mbjpbvwb" method="POST">
         <div class="form-cont">
             
             <div class="inputs-wrapper">
                 <div class="inputs">
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="text" placeholder="Correo Electrónico">
-                    <input type="text" placeholder="Teléfono">
+                    <input type="text" placeholder="Nombre completo" id="name" name="Nombres" required>
+                    <input type="email" placeholder="Correo Electrónico" id="email" name="Email" required>
+                    <input type="text" placeholder="Teléfono" id="number" name="Número" required>
                 </div>
                 <img src="img/logo-minified.svg" class="logo-min"><br>
             </div>
-            <textarea type="text" placeholder="Mensaje" rows="5"></textarea>
+            <textarea type="text" placeholder="Mensaje" rows="5" name="Mensaje"></textarea>
             <div class="enviar-wrapper">
-                <div class="enviar-button">Enviar</div>
+                <button class="enviar-button" id="enviar-button">Enviar</button>
                 <span class="contact-info">
                     ventas@laacopiadora.com<br>
                     Tel. 942974570
                 </span>
             </div>
         </div>
+        <p style="text-align: center;"><span id="status"></span></p> 
     </div>
     <script src="js/rellax.min.js"></script>
     <script>
         var rellax = new Rellax('.rellax', {
           center: true
         });
-        // var rellaxNonCentered = new Rellax('.rellax-non-centered', {
-        //   center: false
-        // });
-      </script>
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

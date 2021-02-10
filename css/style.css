@@ -13,13 +13,22 @@
   src: url(../fonts/Cocogoose_Thin.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#teBrindamos {
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
+}
+
 body {
   margin: 0;
   background-color: #aefab3;
 }
 
 .page1 {
-  background-color: #aefab3;
+  pointer-events: none;
   position: fixed;
 }
 
@@ -48,6 +57,7 @@ body {
 
 .spacer {
   height: 75vh;
+  pointer-events: none;
 }
 
 .logo {
@@ -211,7 +221,7 @@ h1 {
   position: relative;
   z-index: 5;
   background-color: #9dec7b;
-  height: 850px;
+  height: 100vh;
 }
 
 .contacto-title {
@@ -369,6 +379,7 @@ textarea::placeholder {
   border-radius: 50px;
   display: inline-block;
   font-weight: 900;
+  border: none;
 }
 
 .enviar-wrapper {
@@ -402,5 +413,75 @@ textarea::placeholder {
   position: absolute;
   right: 0;
   top: 80px;
+}
+
+.flag-peru {
+  opacity: 1;
+  width: 60px;
+  position: absolute;
+  left: 40px;
+  top: 90vh;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.flag-us {
+  width: 60px;
+  position: absolute;
+  left: 120px;
+  top: 90vh;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+#status {
+  font-family: thin;
+  font-weight: 900;
+  display: inline-block;
+  padding: 10px 55px;
+}
+
+#status.success {
+  color: black;
+  background-color: white;
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
+
+#status.error {
+  color: white;
+  background-color: red;
+  -webkit-animation: status 99s ease forwards;
+          animation: status 99s ease forwards;
+}
+
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
