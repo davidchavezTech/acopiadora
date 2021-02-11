@@ -18,8 +18,8 @@ html {
 }
 
 #teBrindamos {
-  -webkit-transform: translateY(400px);
-          transform: translateY(400px);
+  -webkit-transform: translateY(420px);
+          transform: translateY(420px);
 }
 
 body {
@@ -588,5 +588,13 @@ textarea::placeholder {
 
 button.enviar-button:hover {
   background-color: #41d453;
+}
+
+.burger {
+  display: none;
+}
+
+.close {
+  display: none;
 }
 /*# sourceMappingURL=style-reg.css.map */

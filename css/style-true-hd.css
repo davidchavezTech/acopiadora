@@ -579,4 +579,12 @@ textarea::placeholder {
 button.enviar-button:hover {
   background-color: #41d453;
 }
+
+.burger {
+  display: none;
+}
+
+.close {
+  display: none;
+}
 /*# sourceMappingURL=style-true-hd.css.map */

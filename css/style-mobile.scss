@@ -14,7 +14,7 @@ html {
     scroll-behavior: smooth;
  }
 #teBrindamos{
-    transform: translateY(400px);
+    transform: translateY(250px);
 } 
 body{
     margin:0;
@@ -42,8 +42,7 @@ body{
     pointer-events: none;
     position:fixed;
 }.palta1{
-    margin-top: 20px;
-    width:400px;
+    width:100%;
 }.nav{
     position: sticky;
     top:0;
@@ -58,7 +57,7 @@ body{
     justify-content: space-between;
     // height: 110px;
 }.spacer{
-    height: 61vh;
+    height: 68vh;
     pointer-events: none;
 }.logo{
     width: 150px;
@@ -107,10 +106,11 @@ body{
     // top:100vh;
     z-index: 4;
     position: relative;
-    padding-top:300px;
+    padding-top:345px;
 }.title2{
     color:black;
     font-family: bold;
+    margin-top: 67px;
     font-size: 37px;
 }.tipos-container{
     height: 80vh;
@@ -171,6 +171,7 @@ body{
     font-weight: 600;
     text-align: justify;
 }.go-back{
+    display: none;
     position: absolute;
     left: 0;
     z-index: 0;
@@ -192,24 +193,25 @@ body{
     position: relative;
     z-index: 5;
     background-color: #9dec7b;
-    height:100vh;
 }.contacto-title{
     padding-top: 80px;
     font-family: bold;
     color:#235c39;
-    font-size: 40px;
+    font-size: 28px;
     position: relative;
     margin-left: 20px;
     z-index: 2;
 }.contactate-1{
+    display: inline-block;
     margin-top: 0;
     margin-bottom:0px;
 }.contactate-2{
+    display: inline-block;
     margin-top: 0;
     margin-bottom:0px;
 }.contactate-3{
     margin-top: 0;
-    margin-bottom:0px;
+    margin-bottom:10px;
 }.inputs{
     display: inline-flex;
     flex-direction: column;
@@ -251,7 +253,8 @@ body{
     font-size:14px;
     font-family: thin;
     padding: 10px 0px;
-    margin:15px 60px 0px 40px;
+    margin-top: 15px;
+    margin-left: 40px;
     width: 280px;
 }textarea::placeholder{
     color:#b4cc5e;
@@ -438,7 +441,22 @@ button.enviar-button:hover{
         background-color: white;
     }
     100%{
-        height: 650px;
+        height: 80px;
         background-color: transparent;
+    }
+}
+.close-menu{
+    animation: close-menu 1s ease forwards
+}
+@keyframes close-menu{
+    0%{
+        
+        height: 70vh;
+        padding: 40px 10px 48vh 10px;
+        
+    }
+    100%{
+        height: 0;
+        padding: 0;
     }
 }

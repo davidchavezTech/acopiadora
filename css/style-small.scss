@@ -25,7 +25,7 @@ body{
     pointer-events: none;
     position:fixed;
 }.palta1{
-    width:600px;
+    width:480px;
 }.nav{
     position: sticky;
     top:0;
@@ -362,4 +362,10 @@ body{
 }
 button.enviar-button:hover{
     background-color: #41d453;
+}.burger{
+    display: none;
+}.close{
+    display:none
+}.status-wrapper{
+    margin-top: 0;
 }

@@ -33,7 +33,7 @@ body {
 }
 
 .palta1 {
-  width: 600px;
+  width: 480px;
 }
 
 .nav {
@@ -591,5 +591,17 @@ textarea::placeholder {
 
 button.enviar-button:hover {
   background-color: #41d453;
+}
+
+.burger {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+.status-wrapper {
+  margin-top: 0;
 }
 /*# sourceMappingURL=style-small.css.map */

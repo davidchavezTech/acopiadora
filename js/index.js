@@ -1,17 +1,36 @@
 menuBtn = document.querySelector('.burger')
 closeBtn = document.querySelector('.close')
 
+let screenWidth = window.screen.width
+console.log(screenWidth)
+if(screenWidth<=411){
+  let links = document.querySelectorAll('a')
+  links.forEach(link => {
+    link.addEventListener('click',()=>{
+      closeMenu()
+    })
+  });
+}
 menuBtn.addEventListener('click', (e)=>{
   e.target.style.display = 'none'
   document.querySelector('.nav-wrapper').classList.add('expand-menu')
   document.querySelector('.nav-links').classList.add('open-menu')
 })
-closeBtn.addEventListener('click', (e)=>{
-  menuBtn.style.display = 'inline-block'
-  // document.querySelector('.nav-wrapper').classList.remove('expand-menu')
+// closeBtn.addEventListener('click', (e)=>{
+//   closeMenu()
+// })
+
+function closeMenu(){
   document.querySelector('.nav-wrapper').classList.add('contract-menu')
-  document.querySelector('.nav-links').classList.remove('open-menu')
-})
+  document.querySelector('.nav-links').classList.add('close-menu')
+  setTimeout(() => {
+    document.querySelector('.nav-wrapper').classList.remove('expand-menu')
+    document.querySelector('.nav-links').classList.remove('open-menu')
+    document.querySelector('.nav-wrapper').classList.remove('contract-menu')
+  document.querySelector('.nav-links').classList.remove('close-menu')
+    menuBtn.style.display = 'inline-block'
+  }, 1000);
+}
 prevBtn = document.getElementById('prev-btn')
 nextBtn = document.getElementById('next-btn')
 loop = true
