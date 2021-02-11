@@ -32,6 +32,10 @@ body {
   position: fixed;
 }
 
+.palta1 {
+  width: 600px;
+}
+
 .nav {
   position: -webkit-sticky;
   position: sticky;
@@ -52,17 +56,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 150px;
+  height: 110px;
 }
 
 .spacer {
-  height: 75vh;
+  height: 68vh;
   pointer-events: none;
 }
 
 .logo {
   width: 250px;
-  margin-right: 20vw;
+  margin-right: 5vw;
 }
 
 a {
@@ -73,8 +77,8 @@ a {
   color: white;
   letter-spacing: 3px;
   font-size: 12px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .capsule {
@@ -82,6 +86,11 @@ a {
   border-radius: 50px;
   border: solid white 1px;
   padding: 10px 20px 10px 20px;
+}
+
+.capsule:hover {
+  color: green;
+  background-color: white;
 }
 
 .remove-padding {
@@ -120,12 +129,13 @@ h1 {
 .title2 {
   color: black;
   font-family: bold;
-  font-size: 65px;
+  font-size: 50px;
 }
 
 .tipos-container {
   height: 80vh;
   background-image: url(../img/palta-comparison.png);
+  background-size: 200px;
   background-repeat: no-repeat;
   background-position: center;
   font-family: thin;
@@ -162,13 +172,15 @@ h1 {
 .palta-left {
   position: absolute;
   left: 0;
-  top: 450px;
+  top: 400px;
+  width: 550px;
 }
 
 .palta-right {
   position: absolute;
   right: 0;
-  top: 450px;
+  top: 400px;
+  width: 550px;
 }
 
 .calendar-cont {
@@ -177,9 +189,12 @@ h1 {
 
 .palta-types {
   margin-top: 100px;
-  margin-right: 100px;
   font-family: custom-cursive;
   font-size: 80px;
+}
+
+.check {
+  width: 80px;
 }
 
 .info {
@@ -198,7 +213,7 @@ h1 {
   position: absolute;
   left: 0;
   z-index: 0;
-  margin-top: -500px;
+  margin-top: -100px;
   width: 100%;
 }
 
@@ -207,14 +222,15 @@ h1 {
   color: #6d8c73;
   font-size: 40px;
   margin-top: 250px;
+  margin-bottom: 0;
 }
 
 .img-template {
   position: relative;
   z-index: 1;
   margin-top: 60px;
-  width: 800px;
-  margin-bottom: 250px;
+  max-width: 600px;
+  max-height: 600px;
 }
 
 .page-3 {
@@ -231,7 +247,7 @@ h1 {
   color: #235c39;
   font-size: 50px;
   position: relative;
-  margin-left: 300px;
+  margin-left: 50px;
   z-index: 2;
 }
 
@@ -272,46 +288,45 @@ input {
   border-bottom: solid #9ec41f 1px;
   color: #235c39;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
   font-family: thin;
-  padding: 10px 0px;
+  padding: 6px 10px;
   margin: 15px 60px 0px 40px;
 }
 
 input::-webkit-input-placeholder {
   color: #b4cc5e;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
   font-family: thin;
 }
 
 input:-ms-input-placeholder {
   color: #b4cc5e;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
   font-family: thin;
 }
 
 input::-ms-input-placeholder {
   color: #b4cc5e;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
   font-family: thin;
 }
 
 input::placeholder {
   color: #b4cc5e;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
   font-family: thin;
 }
 
 .logo-min {
-  width: 200px;
+  width: 150px;
 }
 
 .form-cont {
-  margin-top: 50px;
   -webkit-box-shadow: -13px 14px 46px 0px rgba(77, 55, 0, 0.52);
           box-shadow: -13px 14px 46px 0px rgba(77, 55, 0, 0.52);
   padding-top: 30px;
@@ -335,7 +350,7 @@ textarea {
   border-bottom: solid #9ec41f 1px;
   color: #235c39;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
   font-family: thin;
   padding: 10px 0px;
   margin: 15px 60px 0px 40px;
@@ -345,32 +360,33 @@ textarea {
 textarea::-webkit-input-placeholder {
   color: #b4cc5e;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
   font-family: thin;
 }
 
 textarea:-ms-input-placeholder {
   color: #b4cc5e;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
   font-family: thin;
 }
 
 textarea::-ms-input-placeholder {
   color: #b4cc5e;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
   font-family: thin;
 }
 
 textarea::placeholder {
   color: #b4cc5e;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
   font-family: thin;
 }
 
 .enviar-button {
+  cursor: pointer;
   background-color: #235c39;
   font-family: thin;
   color: white;
@@ -396,7 +412,8 @@ textarea::placeholder {
 }
 
 .contact-info {
-  font-size: 22px;
+  font-size: 14px;
+  letter-spacing: 3px;
   font-family: thin;
   font-weight: 900;
   color: #6d6d6d;
@@ -407,12 +424,14 @@ textarea::placeholder {
   position: absolute;
   left: 0;
   bottom: 0;
+  width: 38vw;
 }
 
 .last-right {
+  width: 38vw;
   position: absolute;
   right: 0;
-  top: 80px;
+  top: 40px;
 }
 
 .flag-peru {
@@ -484,4 +503,93 @@ textarea::placeholder {
     pointer-events: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+.slider-container {
+  height: 700px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.pre-arrow {
+  position: absolute;
+  width: 50px;
+  top: 350px;
+  left: 70px;
+  cursor: pointer;
+}
+
+.next-arrow {
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  top: 350px;
+  right: 70px;
+}
+
+#imageToShow.show {
+  -webkit-animation: showMe .2s ease forwards;
+          animation: showMe .2s ease forwards;
+}
+
+#imageToShow.hide {
+  -webkit-animation: hideMe .2s ease forwards;
+          animation: hideMe .2s ease forwards;
+}
+
+@-webkit-keyframes showMe {
+  0% {
+    opacity: 0;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@keyframes showMe {
+  0% {
+    opacity: 0;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@-webkit-keyframes hideMe {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes hideMe {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+button.enviar-button:hover {
+  background-color: #41d453;
+}
+/*# sourceMappingURL=style-small.css.map */

@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acopiadora</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 1367px)" href="css/style-true-hd.css" />
+    <link rel="stylesheet" media="screen and (min-device-width: 1025px)" href="css/style-reg.css" />
+    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="css/style-small.css" />
+    <link rel="stylesheet" media="screen and (min-device-width: 359px)" href="css/style-mobile.css" />
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
     <div id="inicio"></div>
@@ -17,9 +21,11 @@
                 <a href="#teBrindamos" id="nav-te-brindamos">Te Brindamos</a>
                 <a href="#nosotros" id="nav-nosotros">Nosotros</a>
                 <a href="#contactanos" class="remove-padding">
-                <div class="capsule" style="margin-left:40px;" id="nav-contactanos">Contáctanos</div>
+                    <div class="capsule" id="nav-contactanos">Contáctanos</div>
                 </a>
+                <a class="close">CERRAR</a>
             </div>
+            <img src="img/burger.svg" class="burger">
         </div>
     </div>
     <img src="img/flag-peru-on.svg" class="flag-peru">
@@ -47,11 +53,11 @@
                 <div class="palta-types">
                     <div class="type1">
                         <span id="palta-one-title">Palta Fuerte</span>
-                        <img src="img/checkmark-green.png">
+                        <img src="img/checkmark-green.png" class="check">
                     </div>
                     <div class="type2">
                         <span id="palta-two-title">Palta Hass</span>
-                        <img src="img/checkmark-red.png">
+                        <img src="img/checkmark-red.png" class="check">
                     </div>
                 </div>
                 <div class="info">
@@ -60,9 +66,17 @@
             </div>
             <img src="img/notepad.png" id="notepad">
         </div>
-        <img src="img/paltas-bg.png" class="go-back rellax" data-rellax-speed="-10">
+        <img src="img/paltas-bg.png" class="go-back rellax" data-rellax-speed="-10" style="pointer-events: none;">
         <p class="nosotros-title" id="nosotros">Nosotros</p>
-        <img src="img/template.jpeg" class="img-template">
+        <div class="slider-container">
+        
+            <img class="pre-arrow" src="img/prev-arrow.svg" id="prev-btn">
+            <div class="img-cont">
+                <img src="img/template.jpeg" id="imageToShow" class="img-template mySlides">
+                <img src="img/template2.jpeg" id="imageToShow" class="img-template mySlides">
+            </div>
+            <img class="next-arrow" src="img/next-arrow.svg" id="next-btn">
+        </div>
     </div>
     <div class="page-3">
         <img src="img/last-palta-left.png"class="last-left">
