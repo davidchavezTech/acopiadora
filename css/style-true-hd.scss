@@ -25,12 +25,14 @@ body{
     pointer-events: none;
     position:fixed;
 }.nav{
+    pointer-events: none;
     position: sticky;
     top:0;
     z-index: 999;
     background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
     height: 250px;
 }.nav-wrapper{
+    pointer-events: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,6 +265,7 @@ body{
     right:0;
     top:80px;
 }.flag-peru{
+    cursor: pointer;
     opacity: 1;
     width:60px;
     position: absolute;
@@ -270,6 +273,7 @@ body{
     top:90vh;
     transition-duration: .2s;
 }.flag-us{
+    cursor: pointer;
     width:60px;
     position: absolute;
     left: 120px;
@@ -357,4 +361,6 @@ button.enviar-button:hover{
     display: none;
 }.close{
     display:none
+}#temporadas{
+    transform: translateY(-160px);
 }

@@ -37,6 +37,7 @@ body {
 }
 
 .nav {
+  pointer-events: none;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -47,6 +48,7 @@ body {
 }
 
 .nav-wrapper {
+  pointer-events: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,8 +79,8 @@ a {
   color: white;
   letter-spacing: 3px;
   font-size: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .capsule {
@@ -603,5 +605,10 @@ button.enviar-button:hover {
 
 .status-wrapper {
   margin-top: 0;
+}
+
+#temporadas {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 /*# sourceMappingURL=style-small.css.map */

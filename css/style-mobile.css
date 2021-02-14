@@ -70,9 +70,11 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
   height: 250px;
+  pointer-events: none;
 }
 
 .nav-wrapper {
+  pointer-events: auto;
   height: 80px;
   overflow: hidden;
   display: -webkit-box;
@@ -696,7 +698,7 @@ button.enviar-button:hover {
   }
   100% {
     background-color: white;
-    height: 650px;
+    height: 100vh;
   }
 }
 
@@ -706,7 +708,7 @@ button.enviar-button:hover {
   }
   100% {
     background-color: white;
-    height: 650px;
+    height: 100vh;
   }
 }
 
@@ -762,5 +764,10 @@ button.enviar-button:hover {
     height: 0;
     padding: 0;
   }
+}
+
+#temporadas {
+  -webkit-transform: translateY(75px);
+          transform: translateY(75px);
 }
 /*# sourceMappingURL=style-mobile.css.map */

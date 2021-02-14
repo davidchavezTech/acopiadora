@@ -120,8 +120,10 @@ peruFlag.addEventListener('click', ()=>{
 
         $('#nav-inicio').html('Inicio')
         $('#nav-te-brindamos').html('Te Brindamos')
+        $('#nav-temporadas').html('Temporadas')
         $('#nav-nosotros').html('Nosotros')
         $('#nav-contactanos').html('Contáctanos')
+        $('.close').html('Cerrar')
         $('#titulo-page1').html('Sabor único, exquisito y fresco')
         $('.subtitle1').html('Productos cultivados naturalmente')
         $('.title2').html('Te brindamos')
@@ -161,8 +163,10 @@ usFlag.addEventListener('click', ()=>{
         
         $('#nav-inicio').html('Home')
         $('#nav-te-brindamos').html('We present to you')
+        $('#nav-temporadas').html('Seasons')
         $('#nav-nosotros').html('About us')
         $('#nav-contactanos').html('Contact us')
+        $('.close').html('Close')
         $('#titulo-page1').html('Exquisite, fresh and unique taste')
         $('.subtitle1').html('Naturally harvested')
         $('.title2').html('We present to you')

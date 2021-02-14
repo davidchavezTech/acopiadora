@@ -27,12 +27,14 @@ body{
 }.palta1{
     width:480px;
 }.nav{
+    pointer-events: none;
     position: sticky;
     top:0;
     z-index: 999;
     background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
     height: 250px;
 }.nav-wrapper{
+    pointer-events: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,8 +53,8 @@ body{
     color: white;
     letter-spacing: 3px;
     font-size:12px; 
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }.capsule{
     display: inline-block;
     border-radius: 50px;
@@ -368,4 +370,6 @@ button.enviar-button:hover{
     display:none
 }.status-wrapper{
     margin-top: 0;
+}#temporadas{
+    transform: translateY(1px);
 }

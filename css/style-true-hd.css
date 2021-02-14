@@ -33,6 +33,7 @@ body {
 }
 
 .nav {
+  pointer-events: none;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -43,6 +44,7 @@ body {
 }
 
 .nav-wrapper {
+  pointer-events: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,6 +424,7 @@ textarea::placeholder {
 }
 
 .flag-peru {
+  cursor: pointer;
   opacity: 1;
   width: 60px;
   position: absolute;
@@ -432,6 +435,7 @@ textarea::placeholder {
 }
 
 .flag-us {
+  cursor: pointer;
   width: 60px;
   position: absolute;
   left: 120px;
@@ -586,5 +590,10 @@ button.enviar-button:hover {
 
 .close {
   display: none;
+}
+
+#temporadas {
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
 }
 /*# sourceMappingURL=style-true-hd.css.map */
