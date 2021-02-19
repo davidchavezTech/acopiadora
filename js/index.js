@@ -1,6 +1,17 @@
 menuBtn = document.querySelector('.burger')
 closeBtn = document.querySelector('.close')
-
+logo = document.querySelector('.logo')
+window.addEventListener('scroll', ()=>{
+  let scrollListener = this.scrollY
+  console.log(scrollListener)
+  if(scrollListener==0){
+    // debugger
+    logo.classList.remove('fade')
+  }else{
+    // debugger
+    logo.classList.add('fade')
+  }
+})
 let screenWidth = window.screen.width
 console.log(screenWidth)
 if(screenWidth<=411){
@@ -162,7 +173,11 @@ usFlag.addEventListener('click', ()=>{
         }, 350);
         
         $('#nav-inicio').html('Home')
-        $('#nav-te-brindamos').html('We present to you')
+        if(window.screen.width>800){
+          $('#nav-te-brindamos').html('We present to you')
+        }else{
+          $('#nav-te-brindamos').html('<span style="max-width:120px;display:inline-block;line-height: 1.45;">We present to you</span>')
+        }
         $('#nav-temporadas').html('Seasons')
         $('#nav-nosotros').html('About us')
         $('#nav-contactanos').html('Contact us')

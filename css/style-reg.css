@@ -68,7 +68,7 @@ body {
 
 .logo {
   width: 250px;
-  margin-right: 20vw;
+  margin-right: 100px;
 }
 
 a {
@@ -603,5 +603,25 @@ button.enviar-button:hover {
 #temporadas {
   -webkit-transform: translateY(75px);
           transform: translateY(75px);
+}
+
+.about-us-text {
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+  font-family: thin;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.less-margin {
+  margin-top: 40px;
+}
+
+.push-bottom {
+  margin-bottom: 0;
+  padding-bottom: 100px;
 }
 /*# sourceMappingURL=style-reg.css.map */
