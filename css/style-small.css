@@ -638,4 +638,10 @@ button.enviar-button:hover {
   margin-bottom: 0;
   padding-bottom: 100px;
 }
+
+video {
+  width: auto;
+  margin-top: 80px;
+  height: 500px;
+}
 /*# sourceMappingURL=style-small.css.map */
